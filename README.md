@@ -2,7 +2,7 @@
 
 Using object detection models to detect damages in bridges. Detecting defects on a bridge surface to aid in more effective and efficient bridge inspections.  
 
-This challenge was organized by FruitPunch AI and was developed by 2 teams of data scientists and engineers for 10 weeks. 
+This challenge was organized by FruitPunch AI and was developed by 2 teams of data scientists and engineers during 10 weeks. 
 
 
 ### Methods
