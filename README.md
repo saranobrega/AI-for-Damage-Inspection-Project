@@ -5,7 +5,7 @@ Using object detection models to detect damages in bridges. Detecting defects on
 This challenge was organized by FruitPunch AI and was developed by 2 teams of data scientists and engineers during 10 weeks. 
 
 
-### Methods
+## Methods
 
 1. Binary Multi-label classification and Learning Curve Analysis
    - Useful for detecting multiple instances of defects within a single image
@@ -19,9 +19,9 @@ This challenge was organized by FruitPunch AI and was developed by 2 teams of da
 3. Multi-class Single-label classification
    - Useful for inferring the defect label of a cropped image showing a single defect
 
-### Dataset and Training setup details
+## Dataset and Training setup details
 
-#### Binary Multi-label classification and Learning Curve Analysis
+### Binary Multi-label classification and Learning Curve Analysis
 
 1. Dataset: 
    - CODEBRIM, 5 binary labels per image
@@ -37,7 +37,7 @@ This challenge was organized by FruitPunch AI and was developed by 2 teams of da
       - 20% of each training set was held-out for validation, i.e. the model trained with 100 samples was actually trained with 80 samples and validated on 20 samples
 4. Models were finetuned for 20 epochs, but best checkpoint was saved based on validation F1 score.
 
-#### Object Detection
+### Object Detection
 1. Dataset: 
    - CODEBRIM + RWS, 3 classes (ASR, Scheur, Betonrot)
 3. Model: 
@@ -49,7 +49,7 @@ This challenge was organized by FruitPunch AI and was developed by 2 teams of da
    - Test set: 260 samples (14%) were held-out to evaluate the models
 5. Models were finetuned for 10 epochs
 
-#### Multi-class Single-label Classification
+### Multi-class Single-label Classification
 
 1. Dataset: 
    - RWS dataset
