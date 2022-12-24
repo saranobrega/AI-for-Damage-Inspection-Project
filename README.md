@@ -49,6 +49,24 @@ This challenge was organized by FruitPunch AI and was developed by 2 teams of da
    - Test set: 260 samples (14%) were held-out to evaluate the models
 5. Models were finetuned for 10 epochs
 
+#### Multi-class Single-label Classification
+
+1. Dataset: 
+   - RWS dataset
+      -Total training samples: 850 images 920X614 pixels
+      -Total validation samples: 179 images 920X614 pixels
+      -Three defects class labels: Scheur, Betonrot, ASR
+
+   - CODEBRIM dataset
+      - Total training samples: 2613 images
+      - Total validation samples: 278 images
+      - Total defects class labels: corrosion, spallation, exposed bars, cracks, efflorescence
+     
+2. Model: 
+   - Four neural networks were used for CODEBRIM data set
+   - Only Simple CNN was used for RWS dataset
+
+3. Models were finetuned for 20 epochs, but best checkpoint was saved based on validation F1 score
 
 
 
