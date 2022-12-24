@@ -36,3 +36,20 @@ This challenge was organized by FruitPunch AI and was developed by 2 teams of da
       - Training set sizes: 100, 200, 300, 400, 900
       - 20% of each training set was held-out for validation, i.e. the model trained with 100 samples was actually trained with 80 samples and validated on 20 samples
 4. Models were finetuned for 20 epochs, but best checkpoint was saved based on validation F1 score.
+
+#### Object Detection
+1. Dataset: 
+   - CODEBRIM + RWS, 3 classes (ASR, Scheur, Betonrot)
+3. Model: 
+   - Pretrained YOLO-small checkpoint with DETR model (Image resized to min size of 800 & max size of 1333)
+   - 30.7 million training parameters
+ 
+4. Train/validation/test splits:
+   - 1200 samples (62%) used for training and 466 samples (24%) used for validation
+   - Test set: 260 samples (14%) were held-out to evaluate the models
+5. Models were finetuned for 10 epochs
+
+
+
+
+
