@@ -25,6 +25,8 @@ This challenge was organized by FruitPunch AI and was developed by 2 teams of da
 
 1. Dataset: 
    - CODEBRIM, 5 binary labels per image
+   ![alt text](data.png)   
+   ![alt text](data1.png) 
    - Minimal transformations applied (resize, random crop, normalization)
 2. Model: 
    - Pretrained Vision Transformer, 384 px input size
@@ -40,6 +42,8 @@ This challenge was organized by FruitPunch AI and was developed by 2 teams of da
 ### Object Detection
 1. Dataset: 
    - CODEBRIM + RWS, 3 classes (ASR, Scheur, Betonrot)
+
+  
 3. Model: 
    - Pretrained YOLO-small checkpoint with DETR model (Image resized to min size of 800 & max size of 1333)
    - 30.7 million training parameters
@@ -47,6 +51,9 @@ This challenge was organized by FruitPunch AI and was developed by 2 teams of da
 4. Train/validation/test splits:
    - 1200 samples (62%) used for training and 466 samples (24%) used for validation
    - Test set: 260 samples (14%) were held-out to evaluate the models
+   
+![alt text](data2.png)   
+
 5. Models were finetuned for 10 epochs
 
 ### Multi-class Single-label Classification
@@ -61,13 +68,26 @@ This challenge was organized by FruitPunch AI and was developed by 2 teams of da
       - Total training samples: 2613 images
       - Total validation samples: 278 images
       - Total defects class labels: corrosion, spallation, exposed bars, cracks, efflorescence
-     
+
 2. Model: 
    - Four neural networks were used for CODEBRIM data set
+   ![alt text](3.png)  
    - Only Simple CNN was used for RWS dataset
-
+   ![alt text](4.png)  
+   
 3. Models were finetuned for 20 epochs, but best checkpoint was saved based on validation F1 score
 
+
+## (Some) Results
+### Multi-class Single-label Classification
+#### RWS Dataset
+![alt text](5.png) 
+#### CODEBRIM dataset
+![alt text](6.png) 
+![alt text](7.png) 
+![alt text](8.png) 
+![alt text](9.png) 
+![alt text](10.png) 
 
 
 
